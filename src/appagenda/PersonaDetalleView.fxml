@@ -15,7 +15,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="417.0" prefWidth="675.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="appagenda.PersonaDetalleViewController">
+<AnchorPane fx:id="rootPersonaDetalleView" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="417.0" prefWidth="675.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="appagenda.PersonaDetalleViewController">
    <children>
       <GridPane prefHeight="417.0" prefWidth="686.0">
         <columnConstraints>
@@ -69,7 +69,7 @@
             <HBox prefHeight="100.0" prefWidth="379.0" GridPane.columnIndex="1" GridPane.rowIndex="10">
                <children>
                   <ImageView fx:id="imageViewFoto" fitHeight="34.0" fitWidth="122.0" pickOnBounds="true" preserveRatio="true" />
-                  <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="95.0" text="Examinar">
+                  <Button mnemonicParsing="false" onAction="#onActionButtonExaminar" prefHeight="26.0" prefWidth="95.0" text="Examinar">
                      <HBox.margin>
                         <Insets top="5.0" />
                      </HBox.margin>
